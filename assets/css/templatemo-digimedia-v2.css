@@ -1531,6 +1531,9 @@ Portfolio
 }
 
 .portfolio-item .thumb img {
+  width: 100%;
+  height: 400px;  /* or auto if all same size */
+  object-fit: cover;
   border-top-right-radius: 23px;
   border-top-left-radius: 23px;
   overflow: hidden;

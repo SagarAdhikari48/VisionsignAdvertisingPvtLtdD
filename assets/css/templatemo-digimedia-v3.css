@@ -298,7 +298,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #fff;
+  color: #ff0000;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -663,7 +663,7 @@ header
     margin-top: 80px !important;
   }
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #fd0000;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
