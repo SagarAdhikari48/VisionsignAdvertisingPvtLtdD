@@ -12,7 +12,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>DigiMedia - Vision-Sign</title>
+  <!-- Primary Meta Tags -->
+<title>Vision Sign Advertising - Printing & Branding Services in Nepal</title>
+<meta name="title" content="Vision Sign Advertising - Printing & Branding Services in Nepal">
+<meta name="description" content="Leading printing, advertising, and event management company in Lalitpur, Nepal. We provide offset printing, flex printing, 3D boards, event setups, and complete branding solutions.">
+<meta name="keywords" content="printing nepal, advertising nepal, offset printing, flex printing, event management, branding, 3D boards, Lalitpur, Kathmandu">
+<meta name="author" content="Vision Sign Advertising Pvt. Ltd.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://visionsignadvertising.com.np/">
+<meta property="og:title" content="Vision Sign Advertising - Printing & Branding Services">
+<meta property="og:description" content="Complete printing, advertising, and event management solutions in Nepal">
+<meta property="og:image" content="https://yoursite.com/assets/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://visionsignadvertising.com.np/">
+<meta property="twitter:title" content="Vision Sign Advertising">
+<meta property="twitter:description" content="Complete printing, advertising, and event management solutions in Nepal">
+<meta property="twitter:image" content="https://yoursite.com/assets/images/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/images/vslogo.png">
+<link rel="apple-touch-icon" href="/assets/images/Vision sign logo.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://visionsignadvertising.com.np/">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,15 +50,22 @@
   <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
-  <!--
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
--->
+  
   <style>
-    .whatsapp-float {
+    .portfolio-item .thumb {
+        width: 100%;
+        height: 220px; /* set a fixed height */
+        overflow: hidden;
+        border-radius: 15px;
+      }
+
+    .portfolio-item .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* keeps images proportional, fills container */
+      }
+
+    .whatsapp-float { 
       position: fixed;
       width: 60px;
       height: 60px;
@@ -48,13 +82,56 @@ https://templatemo.com/tm-568-digimedia
       align-items: center;
       justify-content: center;
       transition: background 0.3s;
+
     }
 
     .whatsapp-float:hover {
       background-color: #128c7e;
       color: #fff;
     }
+    
+    .logo {
+      font-family:Arial, Helvetica, sans-serif;
+        color: #e10808;
+        font-size: 1.2rem;
+        font-weight:800;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 1200px) {
+        .logo {
+          font-size: 1.2rem;
+        }
+      }
+
+      .nav-link {
+        color: #000;
+        font-weight: 500;
+      }
+      .nav-link:hover {
+        color: #007bff;
+      }
+      .modal {
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: rgba(0,0,0,0.6);
+        display:flex; 
+        justify-content:center;
+        align-items:center; }
+
+      .modal-content { 
+        background:#fff;
+        padding:20px;
+        max-width:800px;
+        width:90%; 
+        border-radius:10px; }
+    
   </style>
+  
+
 
 </head>
 
@@ -109,8 +186,9 @@ https://templatemo.com/tm-568-digimedia
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html">
-              <!-- <img style="height:20px;width:20px" src="assets/images/logo-v3.png" alt=""> -->
-              <h2 class="logo">Vision Sign Advertising</h2>
+              <img style="height:80px;width:auto" src="assets/images/vslogo.png" alt="">
+               <!-- <h2 class="logo">Vision Sign </h2> -->
+
 
             </a>
             <!-- ***** Logo End ***** -->
@@ -123,7 +201,7 @@ https://templatemo.com/tm-568-digimedia
               <li class="scroll-to-section"><a href="#blog">Blog</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
               <li class="scroll-to-section">
-                <div class="border-first-button"><a href="#contact">Free Quote</a></div>
+                <div class="border-first-button"><a href="#free-quote">Free Quote</a></div>
               </li>
             </ul>
             <a class='menu-trigger'>
@@ -218,7 +296,7 @@ https://templatemo.com/tm-568-digimedia
                         <div class="progress-value">
                           <div>
                             99%<br>
-                            <span>Printing</span>
+                            <span>Various <br>Printing</span>
                           </div>
                         </div>
                       </div>
@@ -236,7 +314,7 @@ https://templatemo.com/tm-568-digimedia
                         <div class="progress-value">
                           <div>
                             99%<br>
-                            <span>Photoshop</span>
+                            <span>Event <br> Management</span>
                           </div>
                         </div>
                       </div>
@@ -253,8 +331,8 @@ https://templatemo.com/tm-568-digimedia
                         </span>
                         <div class="progress-value">
                           <div>
-                            99%<br>
-                            <span>Animation</span>
+                            99%<br>   
+                            <span>Branding</span>
                           </div>
                         </div>
                       </div>
@@ -287,20 +365,20 @@ https://templatemo.com/tm-568-digimedia
                   <div class="menu">
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/flexPrint.jpg" alt=""></span>
-                        FLEX PRINT
+                        <span class="icon"><img src="assets/images/advertisement.jpg" alt=""></span>
+                        ADVERTISING
                       </div>
                     </div>
                     <div>
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/digitalPrint.jpg" alt=""></span>
-                        DIGITAL PRINT
+                        <span class="icon"><img src="assets/images/eventmgmt.jpg" alt=""></span>
+                        Event Management
                       </div>
                     </div>
                     <div>
                       <div class="thumb">
                         <span class="icon"><img src="assets/images/offsetPrint.jpg" alt=""></span>
-                        OFFSET PRINT
+                        🖨️ Printing Services
                       </div>
                     </div>
                     <div>
@@ -315,6 +393,7 @@ https://templatemo.com/tm-568-digimedia
                         PROMOTIONAL PRINT
                       </div>
                     </div>
+                   
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -325,26 +404,23 @@ https://templatemo.com/tm-568-digimedia
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>FLEX PRINT</h4>
-                                <p>Digital Printing refers to methods of printing from a digital-based image directly to
-                                  a variety of media. It usually refers to professional printing where small-run jobs
-                                  from
-                                  desktop publishing and other digital sources are printed using large-format and/or
-                                  high-volume
-                                  laser or inkjet printers..</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Normal flex</span>
-                                  <span><i class="fa fa-check"></i> Star black flex</span> <span><i
+                                <h4>Advertising Services</h4>
+                                <p>Advertising is about creating visibility, building awareness, and driving engagement with your audience. At our company, we provide complete advertising solutions — from concept to execution — ensuring your message reaches the right people with maximum impact.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Flex & Printing Solutions</span>
+                                  <span><i class="fa fa-check"></i> Fabricated Branding Materials</span> <span><i
                                       class="fa fa-check"></i>
-                                    Medium Star</span>
-                                  <span><i class="fa fa-check"></i>Backlit flex</span> <span><i class="fa fa-check"></i>
-                                    Flex Print Type 5</span> <span><i class="fa fa-check"></i> Star flex</span>
+                                    Event Advertising</span><br>
+                                  <span><i class="fa fa-check"></i>Promotional Materials</span> <span><i class="fa fa-check"></i>
+                                    Traditional Media Advertising</span> <span><i class="fa fa-check"></i> Digital Advertising </span>
                                 </div>
-                                <p>We provide high quality of printing services</p>
+                                <p>We provide complete advertising solutions that help businesses stand out and connect with their audience. From traditional media campaigns in TV, radio, and newspapers to modern digital advertising on social media, Google, and YouTube, we cover it all. Our expertise extends to outdoor branding with hoardings, flex prints, 3D boards, and glow signs, as well as event-focused advertising such as stage branding, stalls, and photo booths. With high-quality printing, fabrication, and promotional materials, we deliver end-to-end advertising services — from creative design to installation — making us your trusted one-stop partner for visibility and growth.
+
+</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/flexPrint.jpg" alt="">
+                                <img src="assets/images/Advertising Services.jpg" alt="vision sign advertising pvt ltd">
                               </div>
                             </div>
                           </div>
@@ -357,23 +433,29 @@ https://templatemo.com/tm-568-digimedia
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>DIGITAL PRINT</h4>
-                                <p>We provide personalized printing for like, children's books customized with a child's
-                                  name,
-                                  photo books (such as wedding photo books), or any other books.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Laser</span>
-                                  <span><i class="fa fa-check"></i> Inkjet</span> <span><i class="fa fa-check"></i>
-                                    Solid Ink </span>
-                                  <span><i class="fa fa-check"></i> Digital Press</span> <span><i
+                                <h4>🎪 Event Management</h4>
+                                <p>Event Management is about planning, organizing, and executing events that leave a lasting impression. We specialize in managing both corporate and social events, ensuring that every detail — from design and setup to décor and coordination — is handled with creativity and precision. Our goal is to deliver memorable experiences while reducing the stress for our clients.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Corporate Events </span>
+                                  <span><i class="fa fa-check"></i>Stage & Setup</span> <span><i class="fa fa-check"></i>
+                                    Stalls & Fabrication </span>
+                                  <span><i class="fa fa-check"></i> Photo Booths</span> <span><i
                                       class="fa fa-check"></i>
-                                    Dye Sublimation</span>
+                                    Gate & Flower Decoration</span>
+                                    <span><i
+                                      class="fa fa-check"></i>
+                                    Wedding & Cultural Events</span>
+                                    <span><i
+                                      class="fa fa-check"></i>
+                                    Family Functions</span>
                                 </div>
-
+                                <p>We specialize in creating unforgettable events through seamless planning, creative design, and flawless execution. From corporate launches, exhibitions, and cultural festivals to weddings, haldi-mehendi ceremonies, and family functions, we handle every detail with care. Our expertise includes stage setups, fabricated gates, decorative entrances, photo booths, stalls, and complete décor solutions tailored to your theme. With us, every event is more than just an occasion — it’s an experience to remember.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/digitalPrint.jpg" alt="">
+                                <img src="assets/images/Event Management.jpg" alt="">
+                                 <img src="assets/images/Design/Coorporate Statge.jpeg" alt="">
+                                 <img src="assets/images/Design/Digital board.jpeg" alt="" srcset="">
                               </div>
                             </div>
                           </div>
@@ -386,20 +468,18 @@ https://templatemo.com/tm-568-digimedia
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>OFFSET PRINT</h4>
-                                <p>We can Manage offset printing, widely used printing technique in which the inked
-                                  image on a printing
-                                  plate is printed on a rubber cylinder and then transferred (i.e., offset) to paper or
-                                  other material.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Surface Printing</span>
-                                  <span><i class="fa fa-check"></i> Flexographic Printing</span> <span><i
+                                <h4>🖨️ Printing Services</h4>
+                                <p>We provide high-quality printing solutions to meet all business and personal needs — from promotional materials to professional publications. Our in-house facilities ensure speed, consistency, and premium results.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> CNC Cutting </span>
+                                  <span><i class="fa fa-check"></i>  Laser cutting  Work</span> <span><i
                                       class="fa fa-check"></i>
-                                    Screen Printing.</span>
-                                  <span><i class="fa fa-check"></i> Rotary Screen.</span> <span><i
+                                    Wall Paper Printing,Canvas , Febric, Magazines and  books Printing</span>
+                                  <span><i class="fa fa-check"></i> Custom Stickers with Attractive design.</span> <span><i
                                       class="fa fa-check"></i>
-                                    Gravure Printing</span> <span><i class="fa fa-check"></i> Digital Printing</span>
+                                  2D/3D Sinage and all kind of acrylic materials </span> <span><i class="fa fa-check"></i> Digital Printing</span>
+                                  
                                 </div>
-
+                                <p>We offer complete printing solutions to support your business and creative needs, including cards, stationery, leaflets, brochures, magazines, books, and packaging materials. Using advanced offset printing — the leading industrial technique for high-volume, high-quality production — we deliver sharp details, vibrant colors, and long-lasting results. From corporate stationery and marketing materials to large-scale publications and custom cartons, our printing services ensure every project is executed with precision, professionalism, and impact.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -423,7 +503,7 @@ https://templatemo.com/tm-568-digimedia
                                   a well established company. Don't worry about these problems, fell free to contact us
                                 </p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Logo Design</span>
-                                  <span><i class="fa fa-check"></i> Business Card Design</span> <span><i
+                                  <span><i class="fa fa-check"></i> uv Print-Design</span> <span><i
                                       class="fa fa-check"></i>
                                     Brochure Design</span>
                                   <span><i class="fa fa-check"></i> Menu Design</span> <span><i class="fa fa-check"></i>
@@ -497,13 +577,13 @@ https://templatemo.com/tm-568-digimedia
             <div class="row">
               <div class="col-lg-4 col-sm-4">
                 <fieldset>
-                  <input type="web" name="web" class="website" placeholder="Your website URL..." autocomplete="on"
+                  <input type="web" name="web" id="website" class="website" placeholder="Your website URL..." autocomplete="on"
                     required>
                 </fieldset>
               </div>
               <div class="col-lg-4 col-sm-4">
                 <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on"
+                  <input type="address" name="address" id="email" class="email" placeholder="Email Address..." autocomplete="on"
                     required>
                 </fieldset>
               </div>
@@ -521,200 +601,452 @@ https://templatemo.com/tm-568-digimedia
 
 
   <div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Our Portofolio</h6>
-            <h4>See Our Recent <em>Products & Events</em></h4>
-            <div class="line-dec"></div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+          <h6>Our Portfolio</h6>
+          <h4>A Glimpse of Our <em>Creative Works & Successful Events</em></h4>
+          <div class="line-dec"></div>
         </div>
       </div>
     </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio//creativeDies.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Creative Dies & Moulds</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio//marvel.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Marvel</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio/marvel2.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Marvel</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio/marvel3.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Marvel</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio/quest pharma.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Quest Pharmacy</h4>
-                    <span>Medical Pharm</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio/marvel5.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Marvel</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio/wrangler.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Wrangler</h4>
-                    <span>Manufacturer & Exporter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+  </div>
+  <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="loop owl-carousel">
 
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/fabrication marvel.jpg" alt="Outdoor Billboard Branding">
+                </div>
+                <div class="down-content">
+                  <h4>Outdoor Billboard Branding</h4>
+                  <span>High-Impact Fabrication & Advertising</span>
+                </div>
+              </div>
+            </a>
           </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/Showroom branding.png" alt="Outdoor Billboard Branding">
+                </div>
+                <div class="down-content">
+                  <h4>Showroom Branding</h4>
+                  <span>High-Impact Fabrication Showroom Design and Branding</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/3d design and.jpg" alt="Offset Printing for Brochures and Magazines">
+                </div>
+                <div class="down-content">
+                  <h4>3D Design & Offset Printing</h4>
+                  <span>Cards, Leaflets, Brochures & Publications</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/3d coorporate gate.jpg" alt="Stage Setup for Corporate Event">
+                </div>
+                <div class="down-content">
+                  <h4>Corporate Gate & Stage Setup</h4>
+                  <span>Immersive 3D Event Management</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/3d board.jpg" alt="Wedding Mandap and Decoration">
+                </div>
+                <div class="down-content">
+                  <h4>3D Board Design & Decor</h4>
+                  <span>Custom Visuals for Events & Exhibitions</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/fabrication.jpg" alt="Fabricated Exhibition Stall">
+                </div>
+                <div class="down-content">
+                  <h4>Exhibition Stall Fabrication</h4>
+                  <span>Custom Build & Installation Services</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/curve photo booth.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Curve Photo Booth Design</h4>
+                  <span>Interactive Brand Experiences</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/fncci.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>FNCCI Event Branding</h4>
+                  <span>Corporate Booths & Stand Design</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/fabrication2.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Large Format Fabrication</h4>
+                  <span>Complex Structures & Signage</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/acrylic photo booth.jpeg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>acrylic photobooth</h4>
+                  <span>Interactive & Social Media Ready Booths</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/counter for sdb.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Custom SDB Service Counter</h4>
+                  <span>Branded Point-of-Sale Fabrication</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/fabrication.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Exhibition Stall Installation</h4>
+                  <span>Detailed Event Setup & Dismantle</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design//gate decoration setup.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Event Gate & Entrance Setup</h4>
+                  <span>Themed Decor & Large-Scale Structures</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/stage backdrop.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Custom Stage Backdrop</h4>
+                  <span>High-Resolution Print & Mounting</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/Coorporate Statge.jpeg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Coorporate Stage Setup</h4>
+                  <span>Themed Decor & Large-Scale Structures</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/Digital board.jpeg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Stage with Digital Screen</h4>
+                  <span>Themed Decor & Large-Scale Structures</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/screen stage setup.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>LED Screen Stage Setup</h4>
+                  <span>Dynamic Visuals for Corporate Events</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/Selfi boot.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Selfie Photo Booth Rental</h4>
+                  <span>Interactive & Social Media Ready Booths</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/mahotsab stall.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Mahotsab Stall Design</h4>
+                  <span>Festive & Trade Show Kiosks</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/stage setup.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Outdoor Stage Setup</h4>
+                  <span>Sound, Lighting & Event Platform</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/ne9.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>NE9 Exhibit Booth</h4>
+                  <span>Modern Trade Show Branding</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/tent.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Event Tent & Canopy Branding</h4>
+                  <span>Branded Shelters for Outdoor Events</span>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/nquest.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Nquest Campaign Design</h4>
+                  <span>Promotional Event & Activation</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/stall fabrication.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Premium Stall Fabrication</h4>
+                  <span>High-Quality Materials & Finish</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/stall fab.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Custom Stall Fabrication</h4>
+                  <span>End-to-End Exhibit Services</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/stage.jpg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>Event Stage Structure</h4>
+                  <span>Platform Design & Construction</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/Design/light.jpeg" alt="photobooth">
+                </div>
+                <div class="down-content">
+                  <h4>MI Entrance Gate</h4>
+                  <span>Engaging Brand Activation Entrance Gate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="https://www.facebook.com/Vision-Sign-Advertising-Pvt-Ltd-146543305752387/?ref=page_internal" class="btn btn-primary main-button">See Full Portfolio</a>
+    </div>
+  </div>
+</div>
+
+<div id="blog" class="blog py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="row mb-4">
+      <div class="col-lg-6 offset-lg-3 text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="section-heading">
+          <h6 class="text-uppercase text-muted">Recent News</h6>
+          <h4>Check Our Blog <em>Posts</em></h4>
+          <div class="line-dec mx-auto"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div id="blog-container" class="row g-4">
+      <!-- Blog posts will be inserted here dynamically -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full blog article -->
+<div id="blogModal" class="modal" style="display:none;">
+  <div class="modal-content p-4" style="max-width:800px; margin:5% auto; background:#fff; border-radius:12px; box-shadow:0 5px 30px rgba(0,0,0,0.3);">
+    <span id="closeModal" style="cursor:pointer; float:right; font-size:1.5rem;">&times;</span>
+    <h2 id="modalTitle" class="mt-2"></h2>
+    <p id="modalDate" class="text-muted"></p>
+    <img id="modalImage" class="my-3" style="max-width:100%; border-radius:8px;" />
+    <p id="modalContent" class="mb-3"></p>
+    <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+  </div>
+</div>
+
+
+<div id="clients" class="our-clients section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+          <h6>Our Clients</h6>
+          <h4>Trusted By <em>Leading Brands & Companies</em></h4>
+          <div class="line-dec"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="blog" class="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="section-heading">
-            <h6>Recent News</h6>
-            <h4>Check Our Blog <em>Posts</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-post">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/portfolio/creativeDies.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">Creative Dies</span>
-              <span class="date">03 August 2021</span>
-              <a href="#">
-                <h4>This event was held on 03 August 2021</h4>
-              </a>
-              <p>Description about the event</p>
-              <span class="author"><img src="assets/images/author-post.jpg" alt="">By: Creative Dies</span>
-              <div class="border-first-button"><a href="#">Discover More</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-posts">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/portfolio/marvel.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Marvel</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#">
-                      <h4>Event Name</h4>
-                    </a>
-                    <p>Description of Event</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/portfolio/quest pharma.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Quest Pharmacy</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#">
-                      <h4>Event Name</h4>
-                    </a>
-                    <p>Description</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item last-post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/portfolio/wrangler.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Wrangler</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#">
-                      <h4>Event Name</h4>
-                    </a>
-                    <p>Description of Event</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+    <div class="row" id="clients-container">
+      <!-- Client logos will be dynamically inserted -->
     </div>
   </div>
+</div>
 
   <div id="contact" class="contact-us section">
     <div class="container">
@@ -824,16 +1156,20 @@ https://templatemo.com/tm-568-digimedia
       </div>
     </div>
   </footer>
+<div id="output" style="margin-top:10px; color:green;"></div>
+
 
 
   <!-- Scripts -->
+   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+   <script type="module" src="./assets/js/app.js"></script>
 </body>
 
 </html>
