@@ -12,7 +12,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>DigiMedia - Vision-Sign</title>
+  <!-- Primary Meta Tags -->
+<title>Vision Sign Advertising - Printing & Branding Services in Nepal</title>
+<meta name="title" content="Vision Sign Advertising - Printing & Branding Services in Nepal">
+<meta name="description" content="Leading printing, advertising, and event management company in Lalitpur, Nepal. We provide offset printing, flex printing, 3D boards, event setups, and complete branding solutions.">
+<meta name="keywords" content="printing nepal, advertising nepal, offset printing, flex printing, event management, branding, 3D boards, Lalitpur, Kathmandu">
+<meta name="author" content="Vision Sign Advertising Pvt. Ltd.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://visionsignadvertising.com.np/">
+<meta property="og:title" content="Vision Sign Advertising - Printing & Branding Services">
+<meta property="og:description" content="Complete printing, advertising, and event management solutions in Nepal">
+<meta property="og:image" content="https://yoursite.com/assets/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://visionsignadvertising.com.np/">
+<meta property="twitter:title" content="Vision Sign Advertising">
+<meta property="twitter:description" content="Complete printing, advertising, and event management solutions in Nepal">
+<meta property="twitter:image" content="https://yoursite.com/assets/images/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/images/vslogo.png">
+<link rel="apple-touch-icon" href="/assets/images/Vision sign logo.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://visionsignadvertising.com.np/">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -159,7 +186,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html">
-              <img style="height:80px;width:auto" src="assets/images/Vision sign logo.png" alt="">
+              <img style="height:80px;width:auto" src="assets/images/vslogo.png" alt="">
                <!-- <h2 class="logo">Vision Sign </h2> -->
 
 
@@ -1020,121 +1047,6 @@
     </div>
   </div>
 </div>
-<script type="module">
-  import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-
-
-  const SUPABASE_URL = "https://vzgjporfwwajxrcimekz.supabase.co";
-  const SUPABASE_ANON_KEY =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6Z2pwb3Jmd3dhanhyY2ltZWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0NTkzMjgsImV4cCI6MjA3NTAzNTMyOH0.VkZDlu_mHX6gueoyd6N8HgHV5t34x0weErkpVYk3YU8";
-
-
-  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-  /* ---------------------------
-     Load Clients
-  ---------------------------- */
-  async function loadClients() {
-    const { data: clients, error } = await supabase
-      .from("clients")
-      .select("*")
-      .order("priority", { ascending: true });
-
-    if (error) {
-      console.error("Clients error:", error);
-      return;
-    }
-
-    const container = document.getElementById("clients-container");
-    container.innerHTML = "";
-
-    clients.forEach((client) => {
-      const div = document.createElement("div");
-      div.classList.add("col-6", "col-md-3", "mb-4", "text-center");
-      div.innerHTML = `
-        <a href="${client.website || '#'}" target="_blank">
-          <img src="${client.image_url}" alt="${client.name}" 
-               style="max-height:80px; object-fit:contain;" 
-               class="img-fluid">
-        </a>`;
-      container.appendChild(div);
-    });
-  }
-
-  /* ---------------------------
-     Load Blogs
-  ---------------------------- */
-  async function loadBlogs() {
-    const { data: blogs, error } = await supabase
-      .from("blogs")
-      .select("*")
-      .order("date", { ascending: false });
-
-    if (error) {
-      console.error("Error fetching blogs:", error.message);
-      return;
-    }
-
-    const blogContainer = document.getElementById("blog-container");
-    blogContainer.innerHTML = "";
-
-    blogs.forEach((blog) => {
-      const post = document.createElement("div");
-      post.classList.add("col-lg-4", "col-md-6", "mb-4");
-
-      post.innerHTML = `
-        <div class="card h-100 shadow-sm">
-          <img src="${blog.image_url || "https://via.placeholder.com/400"}" 
-              class="card-img-top" alt="${blog.title}">
-          <div class="card-body">
-            <h5 class="card-title">${blog.title}</h5>
-            <p class="text-muted"><em>${new Date(blog.date).toLocaleDateString()}</em></p>
-            <p class="card-text">${(blog.description || "").substring(0, 100)}...</p>
-            <button class="btn btn-primary btn-sm read-more">Read More</button>
-          </div>
-        </div>
-      `;
-
-      // Attach button event
-      post.querySelector(".read-more").addEventListener("click", () => openModal(blog));
-
-      blogContainer.appendChild(post);
-    });
-  }
-
-  /* ---------------------------
-     Blog Modal Functions
-  ---------------------------- */
-  function openModal(blog) {
-    document.getElementById("modalTitle").innerText = blog.title;
-    document.getElementById("modalDate").innerText = new Date(blog.date).toLocaleDateString();
-    document.getElementById("modalImage").src =
-      blog.image_url || "https://via.placeholder.com/600x300";
-    document.getElementById("modalContent").innerText = blog.full_content || "No content available";
-    document.getElementById("modalAuthor").innerText = blog.author || "Unknown";
-
-    document.getElementById("blogModal").style.display = "block";
-  }
-
-  document.getElementById("closeModal").addEventListener("click", () => {
-    document.getElementById("blogModal").style.display = "none";
-  });
-
-  /* ---------------------------
-     Run on page load
-  ---------------------------- */
-  loadClients();
-  loadBlogs();
-</script>
-
-
-
-
-
-
-
-
-
 
   <div id="contact" class="contact-us section">
     <div class="container">
@@ -1257,39 +1169,7 @@
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://unpkg.com/@supabase/supabase-js"></script>
-  
-  <script>
-     SUPABASE_URL = "https://vzgjporfwwajxrcimekz.supabase.co";
-     SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6Z2pwb3Jmd3dhanhyY2ltZWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0NTkzMjgsImV4cCI6MjA3NTAzNTMyOH0.VkZDlu_mHX6gueoyd6N8HgHV5t34x0weErkpVYk3YU8";
-   supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-  </script>
-  
-  
-  <script>
-
- document.getElementById("free-quote").addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const email = document.getElementById("email").value;
-      const website = document.getElementById("website").value;
-
-      const { data, error } = await supabaseClient
-      .from("collaborator_info")
-      .insert([{ email: email, website: website }]);
-
-    document.getElementById("output").textContent =
-      error
-        ? "❌ " + error.message
-        : "✅ Submitted Successfully:\n" + JSON.stringify(data, null, 2);
-
-    // Optional: reset form
-    if (!error) e.target.reset();
-  });
-</script>
-
-
-
-
+   <script type="module" src="./assets/js/app.js"></script>
 </body>
 
 </html>
